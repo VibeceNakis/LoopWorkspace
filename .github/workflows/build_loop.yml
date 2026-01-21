@@ -215,11 +215,20 @@ jobs:
           # Template for customizing submodule Loop (changes Loop app name to "CustomLoop")
           # Remove the "#" sign from the beginning of the line below to activate:
           #curl https://github.com/loopnlearn/Loop/commit/d206432b024279ef710df462b20bd464cd9682d4.patch | git apply --directory=Loop -v --whitespace=fix
+
+          #Loop: VibeceNakis-patch-1 : Endring av karbotider
+          curl https://github.com/VibeceNakis/Loop/commit/c0a7e76abb07de20d1e074947e86dcb867688b56.patch | git apply -v --directory=Loop -v --whitespace=fix
+
+          #Loop: VibeceNakis-patch-2 : Endring av karbotider
+          curl https://github.com/VibeceNakis/Loop/commit/84595490aee8a125565df94be94e73a66fd92341.patch | git apply -v --directory=Loop -v --whitespace=fix
           
           # Submodule LoopKit patches:
           # General template for customizing submodule LoopKit 
           # Copy url from a GitHub commit or pull request and insert below, and remove the "#" sign from the beginning of the line to activate:
           #curl url_to_github_commit.patch | git apply --directory=LoopKit -v --whitespace=fix
+
+          #Loopkit: VibeceNakis-patch-1 : Tilpasning Lyumjev-verdier
+          curl https://github.com/VibeceNakis/Loopkit/commit/7f9c80e982560bec59144ef33148fbc0fd11aaa0.patch | git apply -v --directory=Loopkit -v --whitespace=fix
 
           # Submodule xxxxx patches:
 
